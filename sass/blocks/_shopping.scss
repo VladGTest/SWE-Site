@@ -1,0 +1,143 @@
+.shopping{
+    padding-top: 72px;
+    &__title{
+        margin-bottom: 32px;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 660px 580px;
+        column-gap: 100px;
+        height: 100%;
+    }
+    &__cart-catalog{
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        &-product{
+            min-height: 290px;
+            display: grid;
+            grid-template-columns: 290px 372px;
+            
+            column-gap: 30px;
+            &-photo{
+                width: 290px;
+                height: 290px;
+                grid-row: 1/6;
+            }
+           
+            &-descr{
+                font-size: 24px;
+            }
+            &-price{
+                font-size: 24px;
+            }
+            &-number{
+                font-size: 20px;
+                color: grey;
+            }
+            &-status{
+                font-size: 20px;
+            }
+            &-remove{
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+    &__coupon{
+        min-height: 201px;
+        border: 1px solid grey;
+        padding: 36px 42px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 40px;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+        }
+        &-plus{
+            width: 35px;
+            height: 35px;
+            position: relative;
+            span{
+                &:first-child{
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background-color: black;
+                    top: 50%;
+                }
+                &:last-child{
+                    position: absolute;
+                    display: block;
+                    width: 1px;
+                    height: 100%;
+                    background-color: black;
+                    left: 50%;
+                    
+                }
+            }
+         
+
+            
+        }
+    }
+    &__total-cost{
+        border: 1px solid grey;
+    }
+    form{
+        display: flex;
+        justify-content: space-between;
+    }
+    input{
+        width: 340px;
+        height: 60px;
+        font-size: 30px;
+        padding: 0 10px;
+        
+    }
+    button{
+        width: 133px;
+        height: 60px;
+        background-color: white;
+        font-size: 32px;
+        cursor: pointer;
+        border: none;
+        border: 2px solid black;
+    }
+    &__total-cost{
+        min-height: 440px;
+        padding: 36px 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 43px;
+        &-subtotal, &-discount, &-shipping, &-estimated{
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+        }
+        &-estimated{
+            span{
+                &:first-child{
+                    font-weight: 700;
+                }
+            }
+           
+            
+        }
+    }
+}
+
+.btn__checkout{
+    background-color: black;
+    color: white;
+    min-height: 80px;
+    padding: 20px;
+    font-size: 32px;
+    text-align: center;
+}

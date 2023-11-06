@@ -1,0 +1,49 @@
+.header{
+    text-align: center;
+    &__offer{
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+    }
+    &__navigation{
+        display: flex;
+        column-gap:20px;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: 36px 0;
+        &-title{
+            width: 336px;
+            height: 34px;
+              
+        }
+        &-healper{
+            display: flex;
+            column-gap: 15px;
+        }
+    }
+    &__deserts{
+        display: flex;
+        background-color: black;
+        min-height: 58px;
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    }
+    &__guarantee{
+        display: flex;
+        img{
+            width: 45px;
+            height: 45px;
+        }
+        align-items: center;
+        color: white;
+        span{
+            width: 150px;
+            text-align: left;
+        }
+        
+    }
+}
